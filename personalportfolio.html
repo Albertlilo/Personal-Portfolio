@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albert Adjabeng | Portfolio</title>
+  <meta name="description" content="Portfolio of Albert Adjabeng, an aspiring web developer." />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+  <!-- ===== HEADER / HERO ===== -->
+  <header class="pf-top pf-container">
+    <nav class="pf-nav">
+      <h1 class="pf-brand">Albert Adjabeng</h1>
+      <ul class="pf-links">
+        <li><a href="#about" class="pf-link">About</a></li>
+        <li><a href="#projects" class="pf-link">Projects</a></li>
+        <li><a href="#skills" class="pf-link">Skills</a></li>
+        <li><a href="#contact" class="pf-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class= "pf-hero">
+      <!-- Replace images/profile.jpg with the actual path/name of your photo -->
+      <img class="pf-avatar" src="Albert.jpeg" alt="Portrait of Albert Adjabeng" width="300"/>
+
+      <h2 class="pf-title">Junior Web Developer</h2>
+      <p class="pf-subtitle">
+        I am an aspiring web developer learning HTML, CSS, and JavaScript.
+        I enjoy building clean, simple websites and improving a little every day.
+      </p>
+
+      <a href="#projects" class="pf-cta">View my projects</a>
+    </section>
+  </header>
+
+  <main class="pf-page">
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="pf-section pf-container" id="about">
+      <h2 class="pf-h2">About Me</h2>
+      <p class="pf-text">
+        Hello, my name is Albert Adjabeng. I am currently learning web development
+        using freeCodeCamp and other online resources. My goal is to become
+        a full-stack developer and build real-world applications that help people.
+      </p>
+      <p>
+        Outside of coding, I enjoy coding, reading books and playing basketball.
+      </p>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="pf-grid" id="projects">
+      <h2>Projects</h2>
+
+      <article class="pf-card">
+        <h3>Cat Photo App (freeCodeCamp)</h3>
+        <p>
+          A simple HTML page built as part of the freeCodeCamp curriculum,
+          featuring images, links, and basic layout.
+        </p>
+        <!-- Later you can link to GitHub or CodePen -->
+        <a class="pf-btn" href="cat-photo-app.html" target="_blank">View project</a>
+      </article>
+
+      <article class="pf-card">
+        <h3>Bookstore Page</h3>
+        <p>
+          A small website layout for a fictional bookstore with cards, buttons,
+          and semantic HTML structure.
+        </p>
+        <a class="pf-btn" href="bookstore.html" target="_blank">View project</a>
+      </article>
+
+      <article class="pf-card">
+        <h3>Travel Agency Page</h3>
+        <p>
+          A landing page for a travel agency with sections, lists, images,
+          and embedded videos.
+        </p>
+        <a class="pf-btn" href="travel-agency.html" target="_blank">View project</a>
+      </article>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="pf-container">
+      <h2>Skills</h2>
+      <ul class="pf-list">
+        <li>HTML5 (semantic elements, forms, media)</li>
+        <li>Basic CSS (selectors, box model, flexbox – coming soon!)</li>
+        <li>JavaScript basics (variables, functions – in progress)</li>
+        <li>Version control with Git & GitHub (beginner)</li>
+      </ul>
+    </section>
+
+    <!-- ===== SKILL OVERVIEW TABLE ===== -->
+<section class="pf-section pf-container" id="skill-overview">
+  <h2 class="pf-h2">Skill Overview</h2>
+
+  <table class="pf-table">
+    <thead>
+      <tr>
+        <th>Skill</th>
+        <th>Level</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML</td>
+        <td>Beginner</td>
+        <td>In Progress</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Beginner</td>
+        <td>Starting Soon</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Beginner</td>
+        <td>Upcoming</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="pf-section pf-container pf-contact" id="contact" >
+      <h2 class="pf-h2">Contact</h2> 
+      <p class="pf-text">If you’d like to reach out, you can contact me here:</p>
+      <ul>
+        <!-- Replace # with your real links when you have them -->
+        <li>Email: <a href="mailto:your.email@example.com">albert.adjabeng2@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/Albertlilo" target="_blank">https://github.com/Albertlilo</a>
+</li>
+        <li>
+LinkedIn:
+<a href="https://www.linkedin.com/in/albert-adjabeng-14621a251/" target="_blank">
+linkedin.com/in/albert-adjabeng-14621a251
+</a>
+</li>
+
+    </section>
+    <form class="pf-form">
+  <fieldset>
+    <legend>Send me a message</legend>
+
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+    <button type="submit" class="pf-btn">Send Message</button>
+  </fieldset>
+</form>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="pf-footer">
+    <p>&copy; <span id="year">2025</span> Albert Adjabeng. All rights reserved.</p>
+  </footer>
+  <script>
+  const yearSpan = document.getElementById("year");
+  yearSpan.textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
